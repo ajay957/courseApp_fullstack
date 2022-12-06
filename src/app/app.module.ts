@@ -7,11 +7,16 @@ import { AddComponent } from './add/add.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { FormsModule } from '@angular/forms';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:AddComponent
+  },
+  {
+    path:"view",
+    component:ViewCourseComponent
   }
 ]
 
@@ -19,7 +24,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddComponent,
-    ViewCourseComponent
+    ViewCourseComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
