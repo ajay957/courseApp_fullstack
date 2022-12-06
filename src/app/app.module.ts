@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddComponent } from './add/add.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ViewCourseComponent } from './view-course/view-course.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoute:Routes=[
   {
@@ -16,12 +18,14 @@ const myRoute:Routes=[
 @NgModule({
   declarations: [
     AppComponent,
-    AddComponent
+    AddComponent,
+    ViewCourseComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
