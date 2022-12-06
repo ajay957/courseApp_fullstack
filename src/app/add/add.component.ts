@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./add.component.css']
 })
 export class AddComponent {
+  courseTitle=""
+  description=""
+  venue=""
+  duration=""
+  date=""
+
+  readValue=()=>
+  {
+    let data:any={"courseTitle":this.courseTitle,"description":this.description,"venue":this.venue,"duration":this.duration,"date":this.date}
+    console.log(data)
+  }
 
 }
