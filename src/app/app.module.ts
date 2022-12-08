@@ -8,7 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ViewCourseComponent } from './view-course/view-course.component';
 import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 
 const myRoute:Routes=[
   {
